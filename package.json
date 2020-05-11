@@ -1,0 +1,44 @@
+{
+  "name": "tasks-jsbasic",
+  "version": "1.0.0",
+  "description": "Repo with tasks for JS Basic",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "static . -c 1 --port 8080",
+    "karma": "karma start karma.conf.js",
+    "lint": "eslint \"./*-module/**/*.js\"",
+    "lint:fix": "eslint --fix \"./*-module/**/*.js\"",
+    "test": "npm run karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javascript-info/tasks-js-dom-interfaces.git"
+  },
+  "author": "Artsiom Mezin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javascript-info/tasks-jsbasic/issues"
+  },
+  "homepage": "https://github.com/javascript-info/tasks-jsbasic#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jasmine": "^3.3.1",
+    "jasmine-core": "^3.3.0",
+    "karma": "^4.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-json-reporter": "^1.2.1",
+    "karma-phantomjs-launcher": "^1.0.4"
+  },
+  "dependencies": {
+    "karma-mocha-reporter": "^2.2.5",
+    "node-static": "^0.7.11",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
