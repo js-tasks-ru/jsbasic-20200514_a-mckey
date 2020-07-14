@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Занятие 6: Очищаемая таблица</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <h1>Пример минимально необходимой структуры таблицы для прохождения тестов</h1>
+    <div class="example">
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Salary</td>
+                    <td>City</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ilia</td>
+                    <td>25</td>
+                    <td>1000</td>
+                    <td>Petrozavodsk</td>
+                    <td><a href="#delete">X</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1>Результат</h1>
+    <div class="result">
+
+    </div>
+
+    <script>
+        'use strict';
+
+        let rows = [
+            {
+                id: 1,
+                name: 'Ilia',
+                age: 25,
+                salary: 1000,
+                city: 'Petrozavodsk'
+            },
+            {
+                id: 2,
+                name: 'Vasya',
+                age: 14,
+                salary: 1500,
+                city: 'Moscow'
+            },
+            {
+                id: 3,
+                name: 'Ivan',
+                age: 22,
+                salary: 100,
+                city: 'Bryansk'
+            },
+            {
+                id: 4,
+                name: 'Petya',
+                age: 45,
+                salary: 990,
+                city: 'Chita'
+            }
+        ];
+
+        let table = new ClearedTable(rows);
+        document.querySelector('.result').appendChild(table.el);
+
+    </script>
+</body>
+</html>
